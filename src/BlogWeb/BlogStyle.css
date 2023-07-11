@@ -1,0 +1,286 @@
+
+header {
+
+    position: sticky;
+    top: 0;
+    background-color: #ffff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 75rem;
+    padding: .625rem;
+    margin: 0 auto;
+}
+
+nav ul {
+    display: flex;
+    gap: 1.25rem;
+}
+
+nav ul li {
+    font-size: 1.125rem;
+    list-style: none;
+
+}
+
+nav ul li i {
+    font-size: 1.5625rem;
+}
+
+nav ul li:hover{
+    border-bottom: .125rem solid rgb(255, 251, 0);
+}
+
+/*//////////////////////////////////////////////////////
+/////////////////// hero section ///////////////////////
+/////////////////////////////////////////////////////*/
+
+main {
+    max-width: 75rem;
+    margin: 5rem auto;
+}
+
+#hero {
+    display: flex;
+    gap: 1.25rem;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 3.125rem;
+}
+.hero_content h1 {
+    font-size: 4.0625rem;
+    line-height: 1.2;
+    padding-left: 4.375rem;
+}
+
+.hero_content h4 {
+    font-size: 1.5625rem;
+    font-weight: 300;
+    padding-left: 4.375rem;
+}
+
+.hero_img img {
+    border-radius: 3.125rem;
+    background-size: cover;
+}
+
+/*//////////////////////////////////////////////////////
+/////////////////// big card ///////////////////////
+/////////////////////////////////////////////////////*/
+
+.h_card {
+    display: flex;
+    margin: 1.25rem .625rem;
+    box-shadow: 0rem .3125rem .25rem rgba(221, 221, 221, 0.25);
+    align-items: center;
+    border: .0625rem solid #e2e2e2;
+    border-radius: .3125rem;
+    overflow: hidden;
+}
+.card_content {
+ padding: 1.25rem;
+ display: flex;
+ flex-direction: column;
+ gap: .625rem;
+}
+
+
+.status {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn_read {
+    all: unset;
+    font-weight: 600;
+}
+
+.btn_read:hover {
+    border-bottom: .0625rem solid #ccc;
+}
+
+
+/*//////////////////////////////////////////////////////
+///////////////////  card ///////////////////////
+/////////////////////////////////////////////////////*/
+
+
+.v_card{
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0 1.25rem;
+    max-width: 20rem;
+    box-shadow: 0rem .3125rem .25rem rgba(221, 221, 221, 0.25);
+    align-items: center;
+    border: .0625rem solid #e2e2e2;
+    border-radius: .3125rem;
+    overflow: hidden;
+   
+}
+
+
+
+
+.card_container {
+    display: grid;
+    grid-template-columns: repeat (auto-fit, minmax(20rem, 1fr));
+}
+
+.card_wrapper {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.v_card img {
+    width: 100%;
+    height: 100%;
+}
+
+.btn_sec {
+    text-align: end;
+    margin-bottom: -3.125rem;
+}
+.btn_sec .btn_1{
+    all: unset;
+    background-color: #5e129c;
+    color: white;
+    font-size: 1rem;
+    padding: .625rem .9375rem .75rem .9375rem;
+    font-size: 1.25rem;
+    border-radius: .3125rem;
+}
+
+
+
+
+
+
+/*//////////////////////////////////////////////////////
+///////////////////  footer ///////////////////////
+/////////////////////////////////////////////////////*/
+
+footer{
+    display: flex;
+    gap: 1.25rem;
+    justify-content: space-between;
+    padding: .625rem;
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+
+footer ul {
+display: flex;
+gap: 1.25rem;
+}
+
+
+footer ul li {
+    font-size: 1.25rem;
+    list-style: none;
+   
+}
+
+/*//////////////////////////////////////////////////////
+///////////////////  responshive ///////////////////////
+/////////////////////////////////////////////////////*/
+
+
+@media (max-width:48rem) {
+    nav {
+        flex-direction: column;
+    }
+
+    ul {
+        margin-left: 7.5rem;
+        margin-top: 1.25rem;
+    }
+
+    #hero {
+        
+        flex-direction: column-reverse;
+       margin: .625rem;
+    }
+
+    .hero_content h1{
+        font-size: 2.25rem;
+        text-align: center;
+        padding: .3125rem;
+    }
+
+     .hero_content h4{
+        padding: .3125rem;
+        text-align: center;
+     }
+
+     .hero_img img {
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+     }
+
+     .h_card img {
+        width: 40%;
+        margin:  0 .3125rem;
+    
+     }
+     .card_content {
+        padding: .3125rem;
+        display: flex;
+        flex-direction: column;
+        gap: .3125rem;
+        text-align: justify;
+       }
+
+
+       .card_content h2 {
+        font-size: 1.125rem;
+       }
+        .card_content p {
+        font-size: .75rem;
+       }
+       .status .btn_read {
+        display: grid;
+        gap: 31.25rem;
+       }
+
+
+
+
+    .v_card{
+        flex-direction: column-reverse;
+        margin-bottom: 1.25rem;
+       
+    }
+
+    .card_wrapper {
+        flex-direction: column;
+        margin: 1.25rem auto;
+    }
+
+
+    .btn_sec .btn_1{
+        font-size: .75rem;
+        padding: .625rem
+    
+       
+    }
+
+    footer{
+    flex-direction: column;
+    text-align: center;
+    padding: .625rem;
+    }
+
+    footer ul{
+        margin-top: -0.625rem;
+       margin: 0rem auto;
+       display: flex;
+        gap: .625rem;
+    }
+    
+    
+}
